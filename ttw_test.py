@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 
 import treetaggerwrapper as ttw
+import settings
 
-tagger = ttw.TreeTagger(TAGLANG='en', TAGDIR='c:\\TreeTagger')
+tagger = ttw.TreeTagger(TAGLANG='en', TAGDIR=settings.TTBin)
 tags = tagger.tag_file("test.txt")
 tags = ttw.make_tags(tags)
 
