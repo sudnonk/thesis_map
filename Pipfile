@@ -9,6 +9,7 @@ verify_ssl = true
 treetaggerwrapper = "*"
 six = "*"
 python-dotenv = "*"
+gensim = "*"
 
 [requires]
 python_version = "3.6"
