@@ -9,7 +9,7 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=lo
 sentences = word2vec.LineSentence(sys.argv[1])
 model = word2vec.Word2Vec(sentences,
                           sg=1,
-                          size=300,
+                          size=100,
                           min_count=1,
                           window=10,
                           hs=1,
