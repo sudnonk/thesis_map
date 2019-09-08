@@ -4,7 +4,7 @@ import treetaggerwrapper as ttw
 import settings
 
 tagger = ttw.TreeTagger(TAGLANG='en', TAGDIR=settings.TTBin)
-tags = tagger.tag_file("test.txt")
+tags = tagger.tag_file("PIERC18111901.txt")
 tags = ttw.make_tags(tags)
 
 print(tags)
